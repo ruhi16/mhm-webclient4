@@ -45,7 +45,7 @@ function StudentRecords() {
   return (
     <>
       <section id="studentrecords">
-        <div className="container">
+        <div className="container p-4 ">
           <div className="flex items-center justify-between flex-wrap">
             <div className="mb-7 sm:mb-0">
               <h3 className="text-indigo-500 text-[2rem] font-[700]">

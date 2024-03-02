@@ -53,15 +53,16 @@ function ImageGalary() {
                 alt=""
               />
             </div>
-            <div>dddd
+            <div className="relative">
               <img
                 className="h-auto max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
                 alt=""
-              />ddf
-              <div class="absolute bottom-0 left-0 right-0 p-4 ">
-                <h2 class="text-red-700 text-2xl font-bold">xxxYour Image Title</h2>
+              />
+              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                <h2 class="text-white text-2xl font-bold">Glowing </h2>
               </div>
+
             </div>
           </div>
           <div className="grid gap-4">

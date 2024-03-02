@@ -46,7 +46,7 @@ function TeacherCaraosel() {
       };
   return (
     <>        
-        <div className='w-3/4 mx-auto p-4 gap-4'>
+        <div className='w-3/4 mx-auto py-8 gap-4'>
         <Slider {...settings} >
             {
                 Teachers.map((teacher)=>(
