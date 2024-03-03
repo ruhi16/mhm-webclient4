@@ -8,9 +8,13 @@ import TeacherCaraosel from "./components/items/teachers/TeacherCaraosel";
 import TeacherCard from "./components/items/teachers/TeacherCard";
 import Footer from "./components/items/footer/Footer";
 import MyModal from "./components/modal/MyModal";
-import { useEffect, useState } from "react";
-import { Button } from "react-scroll";
 
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import authService from './appwrite/auth';
+import {login, logout} from './store/authSlice'
+
+import { Button } from "react-scroll";
 import School from "./components/items/school/School";
 import Notice from "./components/items/notice/notice";
 import School2 from "./components/items/school/School2";
@@ -23,9 +27,26 @@ import ImageGalary from "./components/items/galary/ImageGalary";
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+
 
   useEffect(()=>{
     Aos.init();
+    
+    console.log("auth", authService.account);
+    // const user = authService.createAccount({email:'hndas15@gmail.com', password:'123456789', name:'Ayantika das'})
+    // console.log('new user:', user)
+    // authService.getCurrentUser()
+    //   .then((userData) =>{
+    //     if(userData){
+    //       dispatch(login({userData}))
+    //     }else{
+    //       dispatch(logout())
+    //     }
+    //   })
+    //   .finally(()=> setLoading(false))
+
   },[])
 
 
@@ -34,15 +55,9 @@ function App() {
     <div className="container mx-auto">
       <Navbar />
 
-      {/* <MyModal  visible={visible} onClose={() => setVisible(false)}/>      
-      <Button onClick={()=> setVisible(true)}>Open Modal</Button>
-
-      <Home />      
-      <TeacherCaraosel />
-      
-      <Footer /> */}
       <main>
-        <div id="home">          
+        <div id="home">  
+        {/* <Home />         */}
           <Home2 />
         </div>
 
@@ -68,6 +83,7 @@ function App() {
         <div id="comments">
           <Notice />
         </div>
+
         <div id="gallary" className="w-full">
           <ImageGalary />
         </div>

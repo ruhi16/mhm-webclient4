@@ -16,15 +16,42 @@ export class AuthService{
         try{
             const userAccount = await this.account.create(
                     ID.unique(), email, password, name
-                )
+                );
+                console.log('user account:',userAccount)
                 if(userAccount){
-                    //
+                    return this.login({email, password})
+                }else{
+                    return userAccount
                 }
         }catch(error){
-
+            throw error
         }
     }
 
+    async login({email, password}){
+        try{
+            return await this.account.createEmailSession(email, password);
+        }catch(error){
+            throw error
+        }
+    }
+
+    async getCurrentUser(){
+        try{
+            return await this.account.get();
+        }catch(error){
+            console.log("Appwrite service :: getGurrentUser :: error", error);
+        }
+        return null; //when account does not exists
+    }
+
+    async logout(){
+        try{
+            return await this.account.deleteSession();
+        }catch(error){
+            console.log("Appwrite service :: logout :: error", error);
+        }
+    }
 
 }
 

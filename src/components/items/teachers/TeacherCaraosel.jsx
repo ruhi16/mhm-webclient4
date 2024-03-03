@@ -50,7 +50,7 @@ function TeacherCaraosel() {
         <Slider {...settings} >
             {
                 Teachers.map((teacher)=>(
-                    <TeacherCard teacher={teacher}/>
+                    <TeacherCard key={teacher.email} teacher={teacher}/>
                 ))
             }
         </Slider>

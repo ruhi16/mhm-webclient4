@@ -4,6 +4,7 @@ const config = {
     appwriteDatabaseId: String(import.meta.env.VITE_DATABASE_ID),
     appwriteDatabaseName: String(import.meta.env.VITE_DATABASE_NAME),
     appwriteCollectionId: String(import.meta.env.VITE_COLLECTION_ID),
+    appwriteCollectionNoticeId: String(import.meta.env.VITE_COLLECTION_NOTICE_ID),
     appwriteBuckedId: String(import.meta.env.VITE_BUCKET_ID),
 }
 

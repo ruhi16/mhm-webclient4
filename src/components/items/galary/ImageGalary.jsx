@@ -59,8 +59,8 @@ function ImageGalary() {
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
                 alt=""
               />
-              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
-                <h2 class="text-white text-2xl font-bold">Glowing </h2>
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                <h2 className="text-white text-2xl font-bold">Glowing </h2>
               </div>
 
             </div>

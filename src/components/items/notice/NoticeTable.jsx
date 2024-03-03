@@ -10,7 +10,7 @@ function NoticeTable() {
     <>
       <div className="mx-auto w-full bg-teal-50 m-4 p-8 rounded-2xl">
         <div className="w-full mx-auto p-4">
-        <h1 class="max-w-full mb-4 text-2xl text-center font-semibold tracking-tight leading-none md:text-4xl xl:text-6xl dark:text-white">
+        <h1 className="max-w-full mb-4 text-2xl text-center font-semibold tracking-tight leading-none md:text-4xl xl:text-6xl dark:text-white">
               Notice Board
             </h1>
         </div>
@@ -31,7 +31,7 @@ function NoticeTable() {
               <tbody>
                 {
                   Notices.map((notice)=>(
-                    <NoticeTableItem rowItem={notice}/>
+                    <NoticeTableItem key={notice.id} rowItem={notice}/>
                   ))
                 }
                 </tbody>

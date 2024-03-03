@@ -91,10 +91,10 @@ function StudentRecords() {
             data-aos="fade-zoom-in"
             data-aos-delay="50"
             data-aos-duration="1000"
-            className="flex items-center gap-4 flex-wrap mt-12"
+            className="flex items-center gap-4 flex-wrap mt-12 bg-slate-200 justify-center"
           >
             {records.map((record) => (
-              <div className="group max-w-full sm:w-[48.5%] md:w-[38.8%] lg:w-[32.2%] relative z-[1]">
+              <div key={record.id} className="group max-w-full sm:w-[48.5%] md:w-[38.8%] lg:w-[32.2%] relative z-[1]">
                 {/* <h1>{record.name}</h1> */}
                 <figure>
                   <img

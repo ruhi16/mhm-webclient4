@@ -27,18 +27,16 @@ function Navbar() {
 
   return (
     <div>
-      <nav className=" w-full bg-slate-500 p-5 shadow">
+      <nav className=" w-full bg-white p-5 z-20 border-b border-gray-200 shadow-lime-300">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            {/* <div >
-                            Logo
-                        </div> */}
-            <div className="font-bold text-2xl cursor-pointer text-gray-800">
+            
+            <div className="font-bold text-2xl cursor-pointer text-gray-800 line-clamp-1">
               Manikchak High Madrasah(H.S)
             </div>
           </div>
 
-          <div className="hidden  md:flex md:items-center md:justify-end md:gap-4">
+          <div className="hidden  font-medium md:flex md:items-center md:justify-end md:gap-4">
             <div>
               <ul className="flex flex-row items-center gap-2">
                 {links.map((link) => (
@@ -48,7 +46,7 @@ function Navbar() {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      className="hover:text-slate-700 transition-all cursor-pointer"
+                      className="hover:text-slate-700 hover:font-bold transition-all cursor-pointer"
                     >
                       {link.name}
                     </Link>
@@ -92,24 +90,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        {/* <Link
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                >
-                    Home
-                </Link>
-                <Link
-                    to="school"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                >
-                    Dishes
-                </Link> */}
+        
       </div>
     </div>
   );
