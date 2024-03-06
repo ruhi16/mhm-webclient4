@@ -36,14 +36,14 @@ export const Teachers = [{
         youtube:''
     }
 },{
-    name:'Rakhi Sarkar',    
+    name:'Narayan Barman',    
     gender:'Male',
     address:'Lalgola',
     mobno:'',
     email:'',
     designation:'Asst. Teacher',
     seniorid:3,
-    imgurl:'https://scontent-del1-2.xx.fbcdn.net/v/t1.6435-9/71661816_2562695710483505_5867253805434798080_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=43f7UlSjTWIAX9h_ra8&_nc_ht=scontent-del1-2.xx&oh=00_AfBA1UhwGo_69sKhvmW8c_D52xE5n_5Q9ezhEzlY7FU19g&oe=6602D690',
+    imgurl:'https://i.stack.imgur.com/YaL3s.jpg',
     hqual:'MA',
     hqualSubj:'Philosophy',
     subject:'Philosophy',

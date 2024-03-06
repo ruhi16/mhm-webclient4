@@ -9,10 +9,14 @@ import { AiOutlineMenuUnfold } from "react-icons/ai";
 function Navbar() {
   let links = [
     { name: "Home", link: "home" },
+    // { name: "School", link: "school" },
     { name: "Notice", link: "notice" },
-    { name: "School", link: "school" },
-    { name: "About", link: "about" },
-    { name: "Contact", link: "contact" },
+    { name: "Service", link: "service" },
+    // { name: "Teacher", link: "teachers" },
+    { name: "Record", link: "srecords" },
+    { name: "Comments", link: "comments" },
+    // { name: "Gallary", link: "gallary" },
+    { name: "Footer", link: "footer" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -27,7 +31,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className=" w-full bg-white p-5 z-20 border-b border-gray-200 shadow-lime-300">
+      <nav className=" w-full fixed bg-white p-5 z-20 border-b border-gray-200 shadow-lime-300">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             
